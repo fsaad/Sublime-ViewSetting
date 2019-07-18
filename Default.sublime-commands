@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "View Setting",
+        "command": "prompt_get_setting"
+    },
+]
