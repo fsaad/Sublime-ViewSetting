@@ -12,4 +12,8 @@ assigned to that setting will be shown in the status bar.
 
 ### Installation
 
-Clone this repository directly into `~/.config/sublime-text-3/Packages/`.
+Using [Package Control](https://packagecontrol.io/packages/ViewSetting),
+type `ctrl+shift+p` > "Package Control: Install Package" > "ViewSetting".
+
+Alternatively, clone this repository directly into
+`~/.config/sublime-text-3/Packages/`.
