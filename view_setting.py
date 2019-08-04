@@ -10,10 +10,12 @@ SETTINGS_PATH = 'Preferences.sublime-settings'
 
 class prompt_get_setting(sublime_plugin.WindowCommand):
 
-    def run(self, **kwargs):
+    def run(self, key=None):
+        self.settings = sublime.load_settings(SETTINGS_PATH)
+        if key is not None:
+            return self.on_done(key)
         if not hasattr(self, 'last'):
             self.last = ''
-        self.settings = sublime.load_settings(SETTINGS_PATH)
         self.window.show_input_panel(
             'Select setting', self.last, self.on_done, None, None)
 
