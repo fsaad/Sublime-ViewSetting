@@ -7,28 +7,33 @@ import sublime
 import sublime_plugin
 
 SETTINGS_PATH_USR = 'Preferences.sublime-settings'
-
 SETTINGS_PATH_SYS = 'Packages/Default/Preferences.sublime-settings'
-SETTINGS_RESOURCE = sublime.load_resource(SETTINGS_PATH_SYS)
-SETTINGS_DICT = sublime.decode_value(SETTINGS_RESOURCE)
-SETTINGS_KEYS = list(sorted(SETTINGS_DICT.keys()))
 
 class prompt_get_setting(sublime_plugin.WindowCommand):
 
+    def _check_init(self):
+        if not hasattr(self, 'initialized'):
+            settings_resource = sublime.load_resource(SETTINGS_PATH_SYS)
+            settings_dict = sublime.decode_value(settings_resource)
+            self.settings_keys = list(sorted(settings_dict.keys()))
+            self.initialized = True
+
     def run(self, key=None):
+        self._check_init()
         self.settings = sublime.load_settings(SETTINGS_PATH_USR)
         if key is not None:
             return self.on_done(key)
         if not hasattr(self, 'last'):
             self.last = None,
-        self.window.show_quick_panel(SETTINGS_KEYS, self.on_done)
+        self.window.show_quick_panel(self.settings_keys, self.on_done)
 
     def on_done(self, key):
+        self._check_init()
         self.last = key
         if key == -1:
             return None
         elif isinstance(key, int):
-            sett = SETTINGS_KEYS[key]
+            sett = self.settings_keys[key]
         elif isinstance(key, str):
             sett = key
         else:
