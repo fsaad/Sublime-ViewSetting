@@ -1,0 +1,7 @@
+{
+    // Show the requested setting in a popup window.
+    "show_popup": true,
+
+    // Show the requested setting in the status bar.
+    "show_status_bar": false,
+}

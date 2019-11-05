@@ -1,0 +1,29 @@
+[
+    {
+        "caption": "Preferences",
+        "id": "preferences",
+        "mnemonic": "n",
+        "children": [
+            {
+                "caption": "Package Settings",
+                "id": "package-settings",
+                "mnemonic": "P",
+                "children": [
+                    {
+                        "caption": "Sublime-ViewSetting",
+                        "children": [
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/Sublime-ViewSetting/ViewSetting.sublime-settings",
+                                    "default": "// Sublime-ViewSetting Settings - User\n{\n\t$0\n}\n"
+                                }
+                            },
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

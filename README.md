@@ -7,8 +7,16 @@ setting in the `Preferences.sublime-settings` file.
 
 The following option is available in the command palette `ctrl+shift+p`:
 
-- __View Setting__: Type the name of the setting to retrieve. The value
-assigned to that setting will be shown in the status bar.
+- __View Setting__: A drop-down menu of available Sublime settings
+  will be shown. Type the name of the setting to retrieve. The value
+  assigned to that setting will be shown in the status bar or as a
+  popup.
+
+### Customization
+
+Go to `Preferences > Package Settings > Sublime-ViewSetting > Settings`
+to configure whether the setting values should be shown in the status
+bar or in a popup window.
 
 ### Installation
 
