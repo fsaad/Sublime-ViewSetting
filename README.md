@@ -23,5 +23,6 @@ bar or in a popup window.
 Using [Package Control](https://packagecontrol.io/packages/ViewSetting),
 type `ctrl+shift+p` > "Package Control: Install Package" > "ViewSetting".
 
-Alternatively, clone this repository directly into
-`~/.config/sublime-text-3/Packages/`.
+Alternatively, directly clone this repository as follows:
+
+    git clone https://github.com/fsaad/Sublime-ViewSetting ~/.config/sublime-text-3/Packages/ViewSetting
