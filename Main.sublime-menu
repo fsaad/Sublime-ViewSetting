@@ -12,8 +12,8 @@
                                 "caption": "Settings",
                                 "command": "edit_settings",
                                 "args": {
-                                    "base_file": "${packages}/Sublime-ViewSetting/ViewSetting.sublime-settings",
-                                    "default": "// Sublime-ViewSetting Settings - User\n{\n\t$0\n}\n"
+                                    "base_file": "${packages}/ViewSetting/ViewSetting.sublime-settings",
+                                    "default": "// ViewSetting Settings - User\n{\n\t$0\n}\n"
                                 }
                             },
                         ]
