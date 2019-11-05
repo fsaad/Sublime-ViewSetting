@@ -1,13 +1,9 @@
 [
     {
-        "caption": "Preferences",
         "id": "preferences",
-        "mnemonic": "n",
         "children": [
             {
-                "caption": "Package Settings",
                 "id": "package-settings",
-                "mnemonic": "P",
                 "children": [
                     {
                         "caption": "ViewSetting",
