@@ -10,7 +10,7 @@
                 "mnemonic": "P",
                 "children": [
                     {
-                        "caption": "Sublime-ViewSetting",
+                        "caption": "ViewSetting",
                         "children": [
                             {
                                 "caption": "Settings",
