@@ -14,7 +14,7 @@ The following option is available in the command palette `ctrl+shift+p`:
 
 ### Customization
 
-Go to `Preferences > Package Settings > Sublime-ViewSetting > Settings`
+Go to "Preferences" > "Package Settings" > "ViewSetting" > "Settings"
 to configure whether the setting values should be shown in the status
 bar or in a popup window.
 
